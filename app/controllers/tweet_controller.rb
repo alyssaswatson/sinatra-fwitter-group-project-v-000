@@ -1,4 +1,4 @@
-
+require './config/environment'
 class TweetsController < ApplicationController
   get '/tweets' do
     if logged_in?
