@@ -1,5 +1,5 @@
 require './config/environment'
-class TweetsController < ApplicationController
+class TweetController < ApplicationController
   get '/tweets' do
     if logged_in?
       @tweets = Tweet.all
